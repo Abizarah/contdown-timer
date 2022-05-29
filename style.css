@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    right: 100px;
+    bottom: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 50px 50px rgba(0,0,0,0,5), 
+                0 0 0 100px rgba(0,0,0,0,1);
+    border-radius: 5px;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 5em;
+    color: rgb(240, 235, 230);
+    margin-top: -70px;
+}
+
+.countdown {
+    display: flex;
+    margin-top: 50px;
+}
+
+.countdown div {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 3em;
+    padding-left: 6px;
+    margin: 0 10px;
+    font-weight: 50;
+    color: aliceblue;
+    background: linear-gradient(#2C3333, #395B64);
+    
+}
+
+.countdown div:before{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left:  0;
+    width: 100px;
+    height: 50px;
+    background: #2C3333;
+    color: aliceblue;
+    font-size: 0.35em;
+    line-height: 30px;
+    font-weight: 100;
+    
+
+}
+
+.countdown #hari:before{
+    content: 'Hari';
+}
+.countdown #jam:before{
+    content: 'Jam';
+}.countdown #menit:before{
+    content: 'Menit';
+}.countdown #detik:before{
+    content: 'Detik';
+}
+
+.salam {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    right: 100px;
+    bottom: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    border-radius: 5px;
+}
